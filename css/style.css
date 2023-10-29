@@ -46,26 +46,47 @@ body {
 
 .description h1 {
   font-family: var(--fraunces);
+  font-size: 1.9rem;
+  line-height: 1;
+  padding-bottom: 15px;
 }
 
 .description h3 {
   color: var(--Dark-grayish-blue);
   font-size: 0.7rem;
+  font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.3rem;
+  padding-bottom: 15px;
 }
 
 .description p {
   color: var(--Dark-grayish-blue);
+  line-height: 1.5;
 }
+
 
 .shipping p {
   color: var(--Dark-cyan);
+  font-family: var(--fraunces);
+  font-size: 1.4rem;
   font-weight: 700;
+}
+
+.shipping p span {
+  color: var(--Dark-grayish-blue);
+  font-size: 0.8rem;
+  font-weight: 300;
+  margin-left: 30px;  
+  text-decoration: line-through;
 }
 
 .btn {
   color: var(--White);
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
   background-color: var(--Dark-cyan);
 }
 
@@ -79,14 +100,23 @@ body {
     width: 360px;
     display: flex;
     flex-direction: column;
+    /* modificar ao centralizar no body */
     margin: 20px auto;
     gap: 20px;
+
+    border-radius: 0 0 10px 10px;
   }
 
   .description {
-    padding: 0 20px;
+    padding: 0 32px;
   }
 
+  .shipping {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0px 32px 20px 32px;
+  }
 }
 
 .attribution {
