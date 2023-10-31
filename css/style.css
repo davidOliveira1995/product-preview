@@ -38,6 +38,14 @@ body {
   font-size: 14px;
   font-family: var(--montserrat);
   background-color: var(--Cream);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  
 }
 
 .card {
@@ -48,7 +56,7 @@ body {
   font-family: var(--fraunces);
   font-size: 1.9rem;
   line-height: 1;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
 }
 
 .description h3 {
@@ -57,23 +65,28 @@ body {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .description p {
   color: var(--Dark-grayish-blue);
-  line-height: 1.5;
+  padding-bottom: 20px;
 }
 
+.price {
+  display: flex;
+  flex-direction: column;
+}
 
-.shipping p {
+.price p {
   color: var(--Dark-cyan);
   font-family: var(--fraunces);
   font-size: 1.4rem;
   font-weight: 700;
 }
 
-.shipping p span {
+.price p span {
   color: var(--Dark-grayish-blue);
   font-size: 0.8rem;
   font-weight: 300;
@@ -88,8 +101,67 @@ body {
   border-radius: 5px;
   border: none;
   background-color: var(--Dark-cyan);
+  cursor: pointer;
 }
 
+.btn img {
+  margin-right: 10px;
+}
+
+.btn:hover {
+  background-color: var(--Very-dark-blue);
+}
+
+/* DESKTOP */
+@media screen and (min-width: 400px) {
+  .card {
+    width: 580px;
+    height: 67vh;
+    display: flex;
+    flex-direction: row;
+    
+    border-radius: 10px;
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .img-perfume {
+    width: 280px;
+    height: 67vh;
+    border-radius: 10px 0 0 10px;
+  }
+
+  .description {
+    padding: 20px;
+  }
+
+  .description h1 {
+    padding-right: 39px;
+  }
+
+  .description p {
+    padding-right: 20px;
+  }
+
+  .shipping {
+    margin: 0 auto;
+  }
+
+  .price {
+    padding-bottom: 15px;
+  }
+
+  .btn {
+    width: 260px;
+
+  }
+}
+
+/* MOBILE */
 @media screen and (max-width: 375px) {
 
   .img-perfume {
@@ -101,8 +173,7 @@ body {
     display: flex;
     flex-direction: column;
     /* modificar ao centralizar no body */
-    margin: 20px auto;
-    gap: 20px;
+ 
 
     border-radius: 0 0 10px 10px;
   }
