@@ -48,8 +48,11 @@ body {
   
 }
 
+<<<<<<< HEAD
 
 /* Inicio Configuraçõe Globais */
+=======
+>>>>>>> 8602e241da684f87e3530b592dd9aaa2932b6d20
 .card {
   background-color: var(--White);
 }
@@ -78,7 +81,11 @@ body {
 
 .price {
   display: flex;
+<<<<<<< HEAD
   flex-direction: row;
+=======
+  flex-direction: column;
+>>>>>>> 8602e241da684f87e3530b592dd9aaa2932b6d20
 }
 
 .price p {
@@ -90,7 +97,10 @@ body {
 
 .price p span {
   color: var(--Dark-grayish-blue);
+<<<<<<< HEAD
   float: right;
+=======
+>>>>>>> 8602e241da684f87e3530b592dd9aaa2932b6d20
   font-size: 0.8rem;
   font-weight: 300;
   margin-left: 30px;  
@@ -112,12 +122,19 @@ body {
 }
 
 .btn:hover {
+<<<<<<< HEAD
   background-color: hsla(158, 45%, 22%,1);;
 }
 
 /* Final Configurações Globais
 
 /* Inicio DESKTOP */
+=======
+  background-color: var(--Very-dark-blue);
+}
+
+/* DESKTOP */
+>>>>>>> 8602e241da684f87e3530b592dd9aaa2932b6d20
 @media screen and (min-width: 400px) {
   .card {
     width: 580px;
@@ -164,6 +181,7 @@ body {
     width: 260px;
 
   }
+<<<<<<< HEAD
 
   .attribution{
     padding-top: 30px;
@@ -172,6 +190,11 @@ body {
 /* Fim Desktop */
 
 /* Inicio MOBILE */
+=======
+}
+
+/* MOBILE */
+>>>>>>> 8602e241da684f87e3530b592dd9aaa2932b6d20
 @media screen and (max-width: 375px) {
 
   .img-perfume {
@@ -198,12 +221,16 @@ body {
     gap: 10px;
     padding: 0px 32px 20px 32px;
   }
+<<<<<<< HEAD
 
   .attribution {
     display: none;
   }
 }
 /* Fim Mobile */
+=======
+}
+>>>>>>> 8602e241da684f87e3530b592dd9aaa2932b6d20
 
 .attribution {
   font-size: 11px;
